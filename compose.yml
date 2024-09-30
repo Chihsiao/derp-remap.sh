@@ -1,0 +1,7 @@
+services:
+  derp-remap:
+    build: .
+    ports:
+      - 8080:80/tcp
+    volumes:
+      - ./cgi-bin/:/var/www/html/cgi-bin/:ro
